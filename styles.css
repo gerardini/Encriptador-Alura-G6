@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: f3f5fc;
+}
+header{
+    width: 100%;
+    height: 70px;
+}
+.logo{
+    width: fixed 120px;
+    height: fixed 48px;
+    padding-top: 40px;
+    padding-left: 40px;
+    grid-area: 40px;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: absolute;
+    justify-content: space-between;
+}
+.container{
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    padding-left: 100px;
+    width: 1080px;
+    height: 600px;
+}
+
+.cajatexto{
+    width: 577px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+    border: none;
+    background-color: f3f5fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+}
+.cajatexto::placeholder{
+    color: #0A3871;
+}
+.alerta{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    display: flex;
+    color: #495057;
+}
+.container_botones{
+    position: absolute;
+    top: 350px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 25px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 25px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+.seccion_resultado{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    right: 200px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.50);
+}
+.container_muneco{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    align-items: center;
+}
+.container_muneco img{
+    width: 280px;
+    height: 220px;
+    
+}
+.container_parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 350px;
+    left: 40px;
+}
+.container_parrafo h3{
+    font-size: 24px;
+    font-weight: 650;
+    text-align: center;
+    color: #343a30;
+}
+.container_parrafo p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+.container_resultado{
+    position: absolute;
+    bottom: 330px;
+    width: 330px;
+    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 75px;
+    top: 280px;
+    
+}
+.container_resultado p{
+    color: #495057;
+    font-size: 25px;
+    top: 50px;
+    
+}
+.texto_resultado{
+    border: none;
+}
+ 
+.cont-btn-2{
+    padding-left: 40px;
+    top: 400px;
+    position: absolute;
+}
+.btn-2{
+    width: 328px;
+    height: 67px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+
+}
+.ocultar{
+    display: none;
+}
+footer{
+    padding-left: 320px;
+    margin: 20px;
+    padding-top: 520px;
+
+}
+
+@media screen and (max-width: 57.5em){
+  .container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    left: 0%;
+  }
+  .container_caja_texto{
+    width: 80%;
+    
+  }
+  .cajatexto{
+    width: 80%;
+    height: 60%;
+    left: 0%;
+   font-size: 20px;
+    top: 10%;
+  }
+  .alerta{
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .alerta p{
+    font-size: 16px;
+  }
+  .container_botones{
+    width: 80%;
+    left: 5px;
+    top: 70%;
+
+  }
+  .encriptar, .desencriptar{
+    width: 70%;
+    border-radius: 16px;
+  }
+  
+  .container_muneco{
+    width: 50%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .container_muneco img{
+    display: none;
+  }
+ .seccion_resultado{
+    width: 70%;
+    height: 40%;
+    left: 10%;
+    top: 60%;
+  }
+  .container_parrafo{
+    width: 70%;
+    height: 15%;
+    left: 10%;
+    top: 5%;
+  }
+  .container_resultado{
+    width: 70%;
+    height: 35%;
+    top: 5%;
+  }
+  .cont-btn-2{
+    width: 100%;
+    height: 100%;
+    top: 75%;
+    left: 5%;
+  }
+  .btn-2{
+    width: 50%;
+    margin: auto;
+    height: 40%;
+    top: 5%;
+  }
+footer{
+    width: 100%;
+    height: auto;
+    top: auto;
+    margin: auto;
+    text-align: left;
+    position: fixed;
+}
+footer h3{
+    width: 100%;
+    height: 70%;
+    top: 100%;
+    left: 0%;
+}
+footer p{
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    top: auto;
+    left: auto;
+}
+ }

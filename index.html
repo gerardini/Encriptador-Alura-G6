@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900"/>
+   <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    
+    <header>
+        <img class="logo"  src="imagenes/Logo.jpg" alt="Logo de Alura"/>
+       
+    </header>
+
+    <main>
+    <section id="container" name="container" class="container">
+       
+        <div class="container_caja_texto">
+            
+            <textarea class="cajatexto" id="cajatexto" placeholder="Ingrese el texto aqui"></textarea>
+           
+        </div>
+
+        <div class="alerta">
+            <img src="imagenes/alert.jpg" alt="alerta"/>
+            <p>Solo letras minusculas y sin acentos</p>
+        </div>
+        
+        <div class="container_botones">
+            <input type="button"  id="encriptar" class="encriptar" value="Encriptar"/>
+            <input type="button" id="desencriptar" class="desencriptar" value="Desencriptar"/>
+          
+        </div>
+        
+    </section>
+
+    <section class="seccion_resultado" id="seccion_resultado" name="seccion_resultado">
+
+        <div class="container_muneco" >
+            <img src="imagenes/muneco.jpg" alt="Muñeco"/>
+        </div>
+
+        <div class="container_parrafo">
+            <h3>Ningun mensaje fue <br>encontrado</h3>
+            <p>Ingresa el texto que deseas desencriptar</p>
+        </div>
+       
+        
+        <div class="container_resultado"> 
+            <p class="texto_resultado" id="texto_resultado"></p>   
+          
+
+        </div>
+        <div class="cont-btn-2">
+            <button class="btn-2" onclick="copiarContenido()"> Copiar  </button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    
+    <footer>
+       
+       <h3>Created by Gerardo Castellanos Ayala</h3>
+        <p class="copyright">&copy; Copyright Encriptador 2024</p>
+  
+        </footer> 
+    </main>
+</body>
+</html>
